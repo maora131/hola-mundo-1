@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+
+body{
+    margin: 0;
+    padding: none;
+    font-family: 'Rubik', sans-serif;
+    background-color: white;
+}
+
+ul{
+    list-style: none;
+}
+
+header{
+    width: 100%;
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 15px;
+}
+
+header nav{
+    display: inline-block;
+    position: relative;
+    margin-top: 10px;
+}
+
+nav a{
+    display: inline-block;
+    text-decoration: none;
+    background-color: rgb(68, 165, 68);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+nav a:hover, section a:hover{
+    padding: 22px;
+    box-shadow: 4px 3px 3px black;
+    transition: 0.3s;
+    color: black;
+}
+
+header input{
+    padding: 20px; 
+}
+
+header button{
+    padding: 20px;
+    cursor: pointer;
+}
+
+video{
+    height: 100%;
+}
+
+.logo{
+    display: inline;
+    width: 15%;
+    height: 100px;
+    margin: auto;
+    position: relative;
+    float: left;
+}
+
+#video-div{
+    z-index: 1;
+    background-color: rgba(5, 5, 5, 0.548);
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    padding-bottom: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#video-div h2, #tarta h2, #fideos h2{
+    font-size: 20pt;
+    padding: 10px;
+}
+
+#video-div p, #tarta p, #fideos p{
+    text-align: justify;
+    margin-bottom: 80px;
+    padding-right: 20px;
+    padding-left: 20px;
+
+}
+
+#video-div a, #fideos a, #tarta a{
+   background-color: rgb(68, 165, 68);
+   padding: 20px;
+   text-decoration: none;
+   color: white;
+   transition: 0.3s;
+}
+
+#video-div a:hover{
+    padding: 22px;
+    box-shadow: 4px 3px 3px black;
+    transition: 0.3s;
+    color: black;
+    font-size: 13pt;
+}
+#fondo{
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1; 
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+section div{
+    display: inline-block;
+    width: 40%;
+    color: white;
+    margin-left: 6%;
+    height: 200px;
+    padding-bottom: 10px;
+    text-shadow: 3px 3px 3px black;
+    margin-top: 80px;
+   
+    box-shadow:5px 0px 5px 2px black;
+}
+
+#tarta{
+    background-image: url(../img/tarta.webp);
+    background-size: cover;
+}
+
+#fideos{
+    background-image: url(../img/fideos.webp);
+    background-size: cover;
+}
+
+#fideos p, #tarta p{
+    margin-bottom: 50px;
+}
+
+#fideos a, #tarta a{
+    margin-left: 10px;
+}
+
+footer, section{
+    background-color: rgb(173, 202, 173);
+}
+
+footer{
+    padding: 1cm;
+}
+
+footer h3{
+    font-size: 19pt;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(54, 133, 54, 0.473);
+}
+
+footer p{
+    font-size: 13pt;
+    text-align: right;
+    padding-top: 20px;
+}
+
+footer div{
+    display: flex;
+}
+
+footer img{
+    width: 20%;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+footer img:hover{
+    transform: scale(1.2);
+    transition: 0.2s;
+}
+
+@media (max-width: 900px) {
+
+
+    .logo{
+        width: 40%;
+    }
+
+    
+
+    nav a{
+        width: 10%;
+        padding: 20px;
+        text-align: left;
+        margin: 0;
+    }
+
+    #video-div{
+        width: 80%;
+    }
+
+
+
+}
