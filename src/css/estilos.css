@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
-
+/*Mi fuente para los títulos y el logo*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+/*Mi fuente para el resto de textos*/
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap');
 
 body{
     margin: 0;
     padding: none;
-    font-family: 'Rubik', sans-serif;
     background-color: white;
+    font-size: 12pt;
 }
 
 ul{
@@ -30,12 +33,13 @@ nav a{
     display: inline-block;
     text-decoration: none;
     background-color: rgb(68, 165, 68);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     color: white;
     padding: 20px;
     margin-left: 10px;
     margin-right: 10px;
     transition: 0.3s;
+    border-radius: 1em;
 }
 
 nav a:hover, section a:hover{
@@ -78,32 +82,48 @@ video{
     padding-bottom: 50px;
     margin-top: 100px;
     margin-bottom: 100px;
+    border-radius: 1em;
 }
+
 
 #video-div h2, #tarta h2, #fideos h2{
     font-size: 20pt;
     padding: 10px;
+    font-family: 'Dancing Script', cursive;
 }
+/*Aquí pongo la fuente para el p del vídeo*/
+#video-div p {
+    text-align: center;
+    margin-bottom: 80px;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 16pt;
 
-#video-div p, #tarta p, #fideos p{
+}
+/*Aquí separe tarta y fideos para que tengan sus propiedades aparte*/
+#tarta p, #fideos p{
     text-align: justify;
     margin-bottom: 80px;
     padding-right: 20px;
     padding-left: 20px;
-
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 12pt;
 }
 
+/*También cambié la tipo*/
 #video-div a, #fideos a, #tarta a{
    background-color: rgb(68, 165, 68);
    padding: 20px;
    text-decoration: none;
    color: white;
    transition: 0.3s;
+   border-radius: 1em;
+   font-family: 'IBM Plex Sans', sans-serif;
 }
 
 #video-div a:hover{
     padding: 22px;
-    box-shadow: 4px 3px 3px black;
     transition: 0.3s;
     color: black;
     font-size: 13pt;
@@ -126,10 +146,8 @@ section div{
     margin-left: 6%;
     height: 200px;
     padding-bottom: 10px;
-    text-shadow: 3px 3px 3px black;
     margin-top: 80px;
-   
-    box-shadow:5px 0px 5px 2px black;
+    border-radius: 1em;
 }
 
 #tarta{
@@ -149,7 +167,7 @@ section div{
 #fideos a, #tarta a{
     margin-left: 10px;
 }
-
+/*Aquí empieza el footer*/
 footer, section{
     background-color: rgb(173, 202, 173);
 }
@@ -163,6 +181,7 @@ footer h3{
     text-align: center;
     padding: 20px;
     background-color: rgba(54, 133, 54, 0.473);
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
 footer p{
@@ -184,6 +203,25 @@ footer img{
 footer img:hover{
     transform: scale(1.2);
     transition: 0.2s;
+}
+/*Aquí pongo las columnas*/
+.columna1{
+    width: 20%;
+    display: inline-block;
+    margin-left: 150px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 'IBM Plex Sans', sans-serif;
+}
+.columna1 h1{
+    font-size: 'IBM Plex Sans', sans-serif;
+}
+/*Intento de alargar el footer*/
+.footer2{
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 1em;
+    font-size: 'IBM Plex Sans', sans-serif;
 }
 
 @media (max-width: 900px) {
